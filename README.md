@@ -1,37 +1,53 @@
-📚 Exercícios, Atividades e Desafios — Curso Dev Fullstack Júnior | +Prati
-Este repositório contém exercícios, atividades práticas e desafios desenvolvidos durante o curso Dev Fullstack Júnior da +Prati. Os conteúdos abrangem lógica de programação, estruturas de repetição, condicionais, manipulação de dados e muito mais, com foco em fortalecer as bases para o desenvolvimento web completo.
+# 📚 Exercícios, Atividades e Desafios — Curso Dev Fullstack Júnior | +Prati
 
-🚀 Como executar os exercícios localmente
-✅ Pré-requisitos
-Antes de começar, você precisa ter instalado:
+**Este repositório contém exercícios práticos e desafios desenvolvidos durante o curso Dev Fullstack Júnior da +Prati.** 
 
-- Node.js (versão recomendada: LTS)
+**🚀 Preparado para praticar? Siga as instruções abaixo para executar os exercícios localmente!**
 
-- Biblioteca prompt-sync para entrada de dados via terminal
+## ✅ Pré-requisitos
 
-- Visual Studio Code (opcional, mas recomendado)
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-- Extensão Code Runner (no VS Code) ou executar os arquivos manualmente pelo terminal/cmd
+* **[Node.js](https://nodejs.org/)** (versão LTS recomendada)
+* **[npm](https://www.npmjs.com/)** (instalado automaticamente com o Node.js)
+* **Biblioteca `prompt-sync`**: Utilizada para entrada de dados via terminal.
+* **[Visual Studio Code](https://code.visualstudio.com/)** (opcional, mas altamente recomendado para uma melhor experiência de desenvolvimento)
+* **Extensão [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)** (para VS Code) ou a capacidade de executar arquivos `.js` diretamente pelo terminal/cmd.
 
-🔧 Passo a passo
-Clone este repositório:
+## 🛠️ Passo a Passo: Executando os Exercícios
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+Siga estas etapas para configurar e executar os exercícios no seu ambiente local:
 
-Instale a biblioteca prompt-sync:
-npm install prompt-sync
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    cd seu-repositorio
+    ```
 
+2.  **Instale a biblioteca `prompt-sync`:**
+    ```bash
+    npm install prompt-sync
+    ```
 
-Abra o projeto no VS Code (opcional):
-code .
+3.  **Abra o projeto no Visual Studio Code (opcional):**
+    ```bash
+    code .
+    ```
 
-Execute os arquivos de exercício:
+4.  **Execute os arquivos de exercício:**
 
-Com Code Runner (no VS Code):
+    **Opção 1: Usando a extensão Code Runner (no VS Code)**
 
-- Clique com o botão direito no arquivo e selecione Run Code.
+    * Abra o arquivo `.js` desejado no VS Code.
+    * Clique com o botão direito no editor e selecione **"Run Code"**.
+    * Alternativamente, você pode usar o atalho de teclado (geralmente `Ctrl+Alt+N` no Windows/Linux ou `Cmd+Option+N` no macOS).
 
-- Ou pelo terminal/cmd:
+    **Opção 2: Pelo terminal ou prompt de comando (cmd)**
 
-node nome-do-arquivo.js
+    * Navegue até a pasta do projeto no seu terminal.
+    * Execute o arquivo `.js` com o comando `node`:
+        ```bash
+        node nome-do-arquivo.js
+        ```
+        *(Substitua `nome-do-arquivo.js` pelo nome real do arquivo que você quer executar)*
+
