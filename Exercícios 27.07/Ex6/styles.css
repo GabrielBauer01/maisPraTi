@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Contêiner Flexbox para centralizar a galeria */
+.gallery-container {
+    display: flex; /* Transforma o contêiner em um contêiner flex */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente (se houver espaço) */
+    min-height: 80vh; /* Garante que o contêiner ocupe a maior parte da tela */
+    padding: 20px;
+    box-sizing: border-box; /* Inclui padding na largura/altura total */
+}
+
+/* Galeria de imagens usando Grid */
+.image-gallery {
+    display: grid; /* Transforma a galeria em um contêiner grid */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* 3 colunas padrão */
+    gap: 20px; /* Espaçamento entre os itens da grade */
+    max-width: 1200px; /* Largura máxima da galeria */
+    width: 100%; /* Garante que ocupe a largura disponível */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery figure {
+    margin: 0; /* Remove margem padrão de figure */
+    padding: 0;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding-bottom: 10px; /* Espaço para a legenda */
+}
+
+.image-gallery img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaço extra abaixo da imagem */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.image-gallery figcaption {
+    font-size: 0.9em;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Media Queries para ajuste de layout em telas menores */
+
+/* Para telas com largura máxima de 768px (tablets e menores) */
+@media (max-width: 768px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 2 a 3 colunas */
+    }
+}
+
+/* Para telas com largura máxima de 480px (smartphones) */
+@media (max-width: 480px) {
+    .image-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* 1 a 2 colunas */
+        gap: 15px; /* Reduz o espaçamento */
+    }
+
+    .image-gallery figcaption {
+        font-size: 0.8em;
+    }
+}
